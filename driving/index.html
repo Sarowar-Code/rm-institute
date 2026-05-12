@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rahmania Car Driving School - দক্ষ ও নিরাপদ ড্রাইভিং প্রশিক্ষণ">
+    <title>Rahmania Car Driving School | দক্ষ ও নিরাপদ ড্রাইভিং প্রশিক্ষণ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="../dist/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white sticky top-0 z-30 shadow-lg">
+        <div class="container flex justify-between items-center py-4">
+            <div class="flex items-center space-x-2">
+                <a href="/" class="text-2xl font-bold hover:text-accent">রাহমানিয়া</a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="/" class="hover:text-accent transition">হোম</a>
+                <a href="/driving/" class="text-accent font-bold">ড্রাইভিং</a>
+                <a href="/automobile/" class="hover:text-accent transition">অটোমোবাইল</a>
+                <a href="#gallery" class="hover:text-accent transition">গ্যালারি</a>
+                <a href="#contact" class="hover:text-accent transition">যোগাযোগ</a>
+                <a href="#" data-whatsapp class="bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600">WhatsApp</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu pt-20">
+            <button id="menu-close" class="absolute top-4 right-4 text-3xl">✕</button>
+            <div class="flex flex-col space-y-4 p-6 text-lg">
+                <a href="/" class="hover:text-accent">হোম</a>
+                <a href="/driving/" class="text-accent font-bold">ড্রাইভিং</a>
+                <a href="/automobile/" class="hover:text-accent">অটোমোবাইল</a>
+                <a href="#gallery" class="hover:text-accent">গ্যালারি</a>
+                <a href="#contact" class="hover:text-accent">যোগাযোগ</a>
+                <a href="#" data-whatsapp class="bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600 inline-block w-fit">WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-gradient-to-br from-blue-600 to-primary">
+        <div class="container w-full">
+            <div class="text-center text-white mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Rahmania Car Driving School</h1>
+                <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">দক্ষ ও নিরাপদ ড্রাইভিং প্রশিক্ষণ</h2>
+                <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">বাস্তবমুখী প্রশিক্ষণের মাধ্যমে আত্মবিশ্বাসী ও দক্ষ ড্রাইভার তৈরি করা আমাদের লক্ষ্য।</p>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col md:flex-row gap-4 justify-center px-4">
+                <button class="btn btn-primary">ভর্তি চলমান</button>
+                <button class="btn btn-outline">বিস্তারিত জানুন</button>
+                <button data-whatsapp class="btn bg-green-500 text-white hover:bg-green-600">WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Driving School Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">Rahmania Car Driving School সম্পর্কে</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">আমাদের বিশেষত্ব</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">রাহমানিয়া কার ড্রাইভিং স্কুল দেশের অন্যতম বিশ্বস্ত এবং পেশাদার ড্রাইভিং প্রশিক্ষণ প্রতিষ্ঠান।</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">আমরা নতুন এবং অভিজ্ঞ উভয় ড্রাইভারদের জন্য বিস্তৃত প্রশিক্ষণ কর্মসূচি প্রদান করি।</p>
+                    <p class="text-gray-700 leading-relaxed">প্রতিটি শিক্ষার্থী নিরাপদ এবং দক্ষ ড্রাইভিংয়ের জন্য প্রয়োজনীয় সকল দক্ষতা অর্জন করে।</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-primary mb-6">প্রশিক্ষণের হাইলাইট</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">✓</span>
+                            <span>অভিজ্ঞ এবং প্রত্যয়িত প্রশিক্ষক</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">✓</span>
+                            <span>আধুনিক প্রশিক্ষণ যানবাহন</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">✓</span>
+                            <span>নিরাপত্তা সরঞ্জাম সহ</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">✓</span>
+                            <span>BRTA পরীক্ষার প্রস্তুতি</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">✓</span>
+                            <span>নমনীয় সময়সূচী</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Students Learn -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">শিক্ষার্থীরা কী শিখবে</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card bg-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3">🚗</div>
+                    <h3 class="font-bold text-primary mb-2">বেসিক ড্রাইভিং</h3>
+                    <p class="text-gray-600 text-sm">গাড়ির নিয়ন্ত্রণ এবং মৌলিক প্রযুক্তিগত দক্ষতা।</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3">🚦</div>
+                    <h3 class="font-bold text-primary mb-2">ট্রাফিক নিয়মাবলী</h3>
+                    <p class="text-gray-600 text-sm">সড়ক নিয়ম এবং নিরাপদ চালনা নীতি।</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3">🛞</div>
+                    <h3 class="font-bold text-primary mb-2">স্টিয়ারিং নিয়ন্ত্রণ</h3>
+                    <p class="text-gray-600 text-sm">সঠিক স্টিয়ারিং কৌশল এবং অনুশীলন।</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3">⚙️</div>
+                    <h3 class="font-bold text-primary mb-2">গিয়ার ও ব্রেক</h3>
+                    <p class="text-gray-600 text-sm">গিয়ার পরিবর্তন এবং ব্রেক প্রয়োগের কৌশল।</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3">🅿️</div>
+                    <h3 class="font-bold text-primary mb-2">পার্কিং</h3>
+                    <p class="text-gray-600 text-sm">বিভিন্ন পার্কিং পরিস্থিতি এবং কৌশল।</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3">↩️</div>
+                    <h3 class="font-bold text-primary mb-2">রিভার্স ড্রাইভিং</h3>
+                    <p class="text-gray-600 text-sm">পেছনের দিকে চালনা এবং ম্যানুভারিং।</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3">🛣️</div>
+                    <h3 class="font-bold text-primary mb-2">হাইওয়ে ড্রাইভিং</h3>
+                    <p class="text-gray-600 text-sm">দ্রুতগতির রাস্তায় দক্ষ এবং নিরাপদ চালনা।</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3">🛡️</div>
+                    <h3 class="font-bold text-primary mb-2">নিরাপদ ড্রাইভিং</h3>
+                    <p class="text-gray-600 text-sm">জরুরী পরিস্থিতি এবং দুর্ঘটনা প্রতিরোধ।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Training Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">ব্যবহারিক প্রশিক্ষণ</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-6xl mb-4">👨‍🏫</div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">ব্যক্তিগত প্রশিক্ষণ</h3>
+                    <p class="text-gray-600">প্রতিটি শিক্ষার্থী ব্যক্তিগত প্রশিক্ষকের তত্ত্বাবধানে প্রশিক্ষণ পায়।</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl mb-4">🚗</div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">বাস্তব পরিস্থিতি</h3>
+                    <p class="text-gray-600">শহর, হাইওয়ে এবং বিভিন্ন রাস্তার পরিস্থিতিতে প্রশিক্ষণ।</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl mb-4">📊</div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">অগ্রগতি পর্যবেক্ষণ</h3>
+                    <p class="text-gray-600">নিয়মিত মূল্যায়ন এবং দক্ষতা উন্নয়ন ট্র্যাকিং।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Information -->
+    <section class="section bg-gradient-to-br from-primary to-blue-900 text-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold mb-12 text-center">কোর্স তথ্য</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">কোর্স বিস্তারিত</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <h4 class="font-bold text-accent mb-2">কোর্সের সময়কাল</h4>
+                            <p>৪-৬ সপ্তাহ (আপনার পেস অনুযায়ী নমনীয়)</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <h4 class="font-bold text-accent mb-2">সময়সূচী</h4>
+                            <p>সকাল: ৭:০০ AM - ৫:০০ PM</p>
+                            <p>সন্ধ্যা: ৫:০০ PM - ৯:০০ PM</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <h4 class="font-bold text-accent mb-2">প্রশিক্ষণ প্রকার</h4>
+                            <p>১০০% ব্যবহারিক এবং অভিজ্ঞতা-ভিত্তিক</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">মূল্য এবং নথিভুক্তি</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <h4 class="font-bold text-accent mb-2">প্যাকেজ বিকল্প</h4>
+                            <ul class="space-y-1">
+                                <li>✓ বেসিক প্যাকেজ</li>
+                                <li>✓ স্ট্যান্ডার্ড প্যাকেজ</li>
+                                <li>✓ প্রিমিয়াম প্যাকেজ (BRTA প্রস্তুতি সহ)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <h4 class="font-bold text-accent mb-2">নথিভুক্তি প্রক্রিয়া</h4>
+                            <p>সহজ এবং দ্রুত নথিভুক্তি প্রক্রিয়া</p>
+                            <p>অনলাইন এবং অফলাইন বিকল্প উপলব্ধ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRTA Preparation -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">BRTA পরীক্ষার প্রস্তুতি</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-primary mb-4">আমরা কেন সাহায্য করি</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-accent text-2xl mr-3">→</span>
+                            <span>BRTA পরীক্ষার সম্পূর্ণ পরামর্শ প্রদান</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent text-2xl mr-3">→</span>
+                            <span>লাইসেন্স পরীক্ষার জন্য বিশেষ প্রশিক্ষণ</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent text-2xl mr-3">→</span>
+                            <span>নিয়মিত মক পরীক্ষা এবং মূল্যায়ন</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent text-2xl mr-3">→</span>
+                            <span>৯০% এর বেশি সাফল্যের হার</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">প্রস্তুতির ধাপ</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">১</span>
+                            <div>
+                                <h4 class="font-bold">প্রাথমিক মূল্যায়ন</h4>
+                                <p class="text-gray-600">আপনার বর্তমান স্তর এবং দক্ষতা মূল্যায়ন</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">২</span>
+                            <div>
+                                <h4 class="font-bold">লক্ষ্যবস্তু প্রশিক্ষণ</h4>
+                                <p class="text-gray-600">দুর্বলতার ক্ষেত্রে বিশেষ প্রশিক্ষণ</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">३</span>
+                            <div>
+                                <h4 class="font-bold">মক পরীক্ষা</h4>
+                                <p class="text-gray-600">প্রকৃত পরীক্ষার অনুরূপ অনুশীলন পরীক্ষা</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">४</span>
+                            <div>
+                                <h4 class="font-bold">চূড়ান্ত পরীক্ষা</h4>
+                                <p class="text-gray-600">আত্মবিশ্বাসের সাথে পরীক্ষা সম্পন্ন করুন</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Process -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">নথিভুক্তি প্রক্রিয়া</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">১</div>
+                    <h3 class="font-bold text-primary mb-2">যোগাযোগ করুন</h3>
+                    <p class="text-gray-600 text-sm">আমাদের সাথে ফোন বা WhatsApp এ যোগাযোগ করুন</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">२</div>
+                    <h3 class="font-bold text-primary mb-2">ভিজিট করুন</h3>
+                    <p class="text-gray-600 text-sm">আমাদের প্রতিষ্ঠান দেখতে এবং জানতে আসুন</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">३</div>
+                    <h3 class="font-bold text-primary mb-2">তথ্য জমা দিন</h3>
+                    <p class="text-gray-600 text-sm">প্রয়োজনীয় ব্যক্তিগত তথ্য জমা দিন</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">४</div>
+                    <h3 class="font-bold text-primary mb-2">শুরু করুন</h3>
+                    <p class="text-gray-600 text-sm">আপনার প্রশিক্ষণ যাত্রা শুরু করুন</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">প্রশিক্ষণ গ্যালারি</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">ড্রাইভিং প্রশিক্ষণ</span>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">হাইওয়ে অনুশীলন</span>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">শিক্ষার্থীরা অনুশীলন</span>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">গাড়ি পার্কিং প্রশিক্ষণ</span>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">নিরাপত্তা সরঞ্জাম</span>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">সার্টিফিকেট প্রদান</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">সাধারণ প্রশ্ন (FAQ)</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                    <summary class="font-bold text-primary text-lg">কোর্স কতদিন চলে?</summary>
+                    <p class="text-gray-600 mt-4">সাধারণত কোর্স ৪-৬ সপ্তাহ স্থায়ী হয়, তবে আপনার গতি এবং প্রয়োজন অনুযায়ী সময় বৃদ্ধি বা হ্রাস করা যায়।</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                    <summary class="font-bold text-primary text-lg">কি ধরনের গাড়ি দিয়ে প্রশিক্ষণ দেওয়া হয়?</summary>
+                    <p class="text-gray-600 mt-4">আমরা অটোম্যাটিক এবং ম্যানুয়াল উভয় ধরনের গাড়িতে প্রশিক্ষণ প্রদান করি। আপনি আপনার পছন্দ অনুযায়ী বেছে নিতে পারেন।</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                    <summary class="font-bold text-primary text-lg">BRTA পরীক্ষায় সাফল্যের হার কত?</summary>
+                    <p class="text-gray-600 mt-4">আমাদের শিক্ষার্থীদের ৯০% এর বেশি প্রথম চেষ্টায় BRTA পরীক্ষায় উত্তীর্ণ হয়।</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                    <summary class="font-bold text-primary text-lg">মহিলা প্রশিক্ষণার সুবিধা আছে কি?</summary>
+                    <p class="text-gray-600 mt-4">হ্যাঁ, আমরা নারী শিক্ষার্থীদের জন্য বিশেষ সময়সূচী এবং মহিলা প্রশিক্ষক প্রদান করি।</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                    <summary class="font-bold text-primary text-lg">প্রশিক্ষণের পর সার্টিফিকেট পাব?</summary>
+                    <p class="text-gray-600 mt-4">হ্যাঁ, সফলভাবে প্রশিক্ষণ সম্পন্ন করলে আপনি একটি সরকার স্বীকৃত প্রশিক্ষণ সার্টিফিকেট পাবেন।</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact" class="section bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="text-4xl font-bold mb-6">আজই শুরু করুন</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">বিস্তারিত তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন এবং আপনার ড্রাইভিং যাত্রা শুরু করুন।</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="btn btn-primary">যোগাযোগ করুন</button>
+                <button data-whatsapp class="btn bg-green-500 text-white hover:bg-green-600">WhatsApp এ বার্তা দিন</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Rahmania Car Driving School</h3>
+                    <p class="text-gray-400">আপনার বিশ্বস্ত ড্রাইভিং প্রশিক্ষণ অংশীদার।</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">বিভাগ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/" class="hover:text-white">হোম</a></li>
+                        <li><a href="/automobile/" class="hover:text-white">অটোমোবাইল</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">তথ্য</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">কোর্স বিবরণ</a></li>
+                        <li><a href="#" class="hover:text-white">মূল্য নির্ধারণ</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">যোগাযোগ</h4>
+                    <p class="text-gray-400">📞 +880 17-XXXX-XXXX</p>
+                    <p class="text-gray-400">💬 WhatsApp এ চ্যাট করুন</p>
+                </div>
+            </div>
+            <hr class="border-gray-700 mb-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2026 Rahmania Car Driving School. সর্বাধিকার সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="#" data-whatsapp class="whatsapp-btn" title="WhatsApp এ যোগাযোগ করুন">
+        <span>💬</span>
+    </a>
+
+    <script src="../src/script.js"></script>
+</body>
+</html>

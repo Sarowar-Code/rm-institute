@@ -1,0 +1,19 @@
+{
+    "name": "rahmania-skills-centre",
+    "version": "1.0.0",
+    "description": "Rahmania Skills Centre - Professional driving and automobile technical training website",
+    "scripts": {
+        "dev": "tailwindcss -i ./src/style.css -o ./dist/style.css --watch",
+        "build": "tailwindcss -i ./src/style.css -o ./dist/style.css --minify"
+    },
+    "keywords": [
+        "driving",
+        "automobile",
+        "training",
+        "education",
+        "Bangladesh"
+    ],
+    "devDependencies": {
+        "tailwindcss": "^3.0.0"
+    }
+}

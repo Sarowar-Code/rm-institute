@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NK Automobile Institute - আধুনিক অটোমোবাইল টেকনিক্যাল প্রশিক্ষণ">
+    <title>NK Automobile Institute | আধুনিক অটোমোবাইল টেকনিক্যাল প্রশিক্ষণ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="../dist/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white sticky top-0 z-30 shadow-lg">
+        <div class="container flex justify-between items-center py-4">
+            <div class="flex items-center space-x-2">
+                <a href="/" class="text-2xl font-bold hover:text-accent">রাহমানিয়া</a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="/" class="hover:text-accent transition">হোম</a>
+                <a href="/driving/" class="hover:text-accent transition">ড্রাইভিং</a>
+                <a href="/automobile/" class="text-accent font-bold">অটোমোবাইল</a>
+                <a href="#gallery" class="hover:text-accent transition">গ্যালারি</a>
+                <a href="#contact" class="hover:text-accent transition">যোগাযোগ</a>
+                <a href="#" data-whatsapp class="bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600">WhatsApp</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu pt-20">
+            <button id="menu-close" class="absolute top-4 right-4 text-3xl">✕</button>
+            <div class="flex flex-col space-y-4 p-6 text-lg">
+                <a href="/" class="hover:text-accent">হোম</a>
+                <a href="/driving/" class="hover:text-accent">ড্রাইভিং</a>
+                <a href="/automobile/" class="text-accent font-bold">অটোমোবাইল</a>
+                <a href="#gallery" class="hover:text-accent">গ্যালারি</a>
+                <a href="#contact" class="hover:text-accent">যোগাযোগ</a>
+                <a href="#" data-whatsapp class="bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600 inline-block w-fit">WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-gradient-to-br from-gray-800 to-primary">
+        <div class="container w-full">
+            <div class="text-center text-white mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">NK Automobile Institute</h1>
+                <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">আধুনিক অটোমোবাইল টেকনিক্যাল প্রশিক্ষণ</h2>
+                <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">হাতে-কলমে প্রশিক্ষণের মাধ্যমে দক্ষ অটোমোবাইল টেকনিশিয়ান তৈরি করা আমাদের লক্ষ্য।</p>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col md:flex-row gap-4 justify-center px-4">
+                <button class="btn btn-primary">ভর্তি চলমান</button>
+                <button class="btn btn-outline">বিস্তারিত জানুন</button>
+                <button data-whatsapp class="btn bg-green-500 text-white hover:bg-green-600">WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Institute Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">NK Automobile Institute সম্পর্কে</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">আমাদের মিশন</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">NK Automobile Institute হল বাংলাদেশে অটোমোবাইল প্রযুক্তিতে সর্বোচ্চ মানের প্রশিক্ষণ প্রদানকারী প্রতিষ্ঠান।</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">আমরা আধুনিক প্রযুক্তি এবং ব্যবহারিক অভিজ্ঞতার সমন্বয় ঘটিয়ে পরবর্তী প্রজন্মের অটোমোবাইল বিশেষজ্ঞ তৈরি করি।</p>
+                    <p class="text-gray-700 leading-relaxed">আমাদের কোর্সগুলি শিল্পের চাহিদা এবং আন্তর্জাতিক মান মেনে চলে।</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl border-l-4 border-accent">
+                    <h3 class="text-2xl font-bold text-primary mb-6">ইনস্টিটিউটের শক্তি</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">✓</span>
+                            <span>আধুনিক সুসজ্জিত কর্মশালা</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">✓</span>
+                            <span>অভিজ্ঞ এবং প্রত্যয়িত প্রশিক্ষক</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">✓</span>
+                            <span>সর্বশেষ ডায়াগনস্টিক সরঞ্জাম</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">✓</span>
+                            <span>আন্তর্জাতিক মানের পাঠ্যক্রম</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">✓</span>
+                            <span>চাকরির নিশ্চয়তা সহায়তা</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Information -->
+    <section class="section bg-gradient-to-br from-primary to-blue-900 text-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold mb-12 text-center">কোর্স তথ্য</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur">
+                    <h3 class="text-2xl font-bold text-accent mb-4">কোর্সের সময়কাল</h3>
+                    <p class="text-2xl font-bold mb-2">৩ মাস</p>
+                    <p class="text-gray-300">নিবিড় এবং ব্যাপক প্রশিক্ষণ</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur">
+                    <h3 class="text-2xl font-bold text-accent mb-4">ক্লাস সময়সূচী</h3>
+                    <p class="text-2xl font-bold mb-2">সপ্তাহে ৩ দিন</p>
+                    <p class="text-gray-300">সকাল ও সন্ধ্যা ক্লাস উপলব্ধ</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur">
+                    <h3 class="text-2xl font-bold text-accent mb-4">প্রশিক্ষণ ধরন</h3>
+                    <p class="text-2xl font-bold mb-2">থিওরি + প্র্যাকটিক্যাল</p>
+                    <p class="text-gray-300">৪০% তত্ত্ব + ৬০% ব্যবহারিক</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">পাঠ্যক্রম</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-6">প্রধান বিষয়সমূহ</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">⚙️</span>
+                            <span class="text-gray-700"><strong>ইঞ্জিন সিস্টেম:</strong> কাজের নীতি ও মেরামত</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">⚡</span>
+                            <span class="text-gray-700"><strong>ইলেকট্রিক্যাল সিস্টেম:</strong> ব্যাটারি, অল্টারনেটর, স্টার্টার</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">🔧</span>
+                            <span class="text-gray-700"><strong>ট্রান্সমিশন:</strong> গিয়ারবক্স, ক্লাচ, ডিফারেনশিয়াল</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">❄️</span>
+                            <span class="text-gray-700"><strong>কুলিং সিস্টেম:</strong> রেডিয়েটর, থার্মোস্ট্যাট</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">⛽</span>
+                            <span class="text-gray-700"><strong>ফুয়েল সিস্টেম:</strong> ইনজেকশন, কার্বুরেটর</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">🛡️</span>
+                            <span class="text-gray-700"><strong>ABS সিস্টেম:</strong> আধুনিক ব্রেকিং প্রযুক্তি</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-6">উন্নত বিষয়সমূহ</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">🔍</span>
+                            <span class="text-gray-700"><strong>OBD Scanner:</strong> ত্রুটি নির্ণয় সরঞ্জাম</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">📊</span>
+                            <span class="text-gray-700"><strong>ECU Diagnostics:</strong> ইঞ্জিন নিয়ন্ত্রণ একক</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">🔌</span>
+                            <span class="text-gray-700"><strong>ওয়্যারিং ডায়াগ্রাম:</strong> বৈদ্যুতিক সিস্টেম পড়া</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">🧰</span>
+                            <span class="text-gray-700"><strong>টুলস ব্যবহার:</strong> পেশাদার সরঞ্জাম পরিচয়</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">📋</span>
+                            <span class="text-gray-700"><strong>সার্ভিস ম্যানুয়াল:</strong> প্রকৃত যানবাহন ম্যানুয়াল</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-accent text-2xl mr-3">🎓</span>
+                            <span class="text-gray-700"><strong>সার্টিফিকেশন:</strong> আন্তর্জাতিক মান সার্টিফিকেট</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Training Section -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">ওয়ার্কশপ প্রশিক্ষণ</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card bg-white p-8 rounded-xl text-center">
+                    <div class="text-5xl mb-4">🔧</div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">প্র্যাকটিক্যাল ওয়ার্কশপ</h3>
+                    <p class="text-gray-600">বাস্তব যানবাহন নিয়ে হাতে-কলমে প্রশিক্ষণ দেওয়া হয়। প্রতিটি শিক্ষার্থী সরাসরি মেরামত এবং রক্ষণাবেক্ষণ কাজ করে।</p>
+                </div>
+                <div class="card bg-white p-8 rounded-xl text-center">
+                    <div class="text-5xl mb-4">👨‍🔧</div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">ব্যক্তিগত গাইডেন্স</h3>
+                    <p class="text-gray-600">অভিজ্ঞ মেকানিক এবং প্রশিক্ষকরা প্রতিটি শিক্ষার্থীকে ব্যক্তিগতভাবে গাইড করেন।</p>
+                </div>
+                <div class="card bg-white p-8 rounded-xl text-center">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">পেশাদার দক্ষতা</h3>
+                    <p class="text-gray-600">পেশাদার মেকানিক হওয়ার জন্য প্রয়োজনীয় সকল দক্ষতা এবং জ্ঞান প্রদান করি।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Opportunities Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">ক্যারিয়ার সুযোগ</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-6">কর্মসংস্থানের ক্ষেত্র</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-accent text-2xl mr-3">✓</span>
+                            <span><strong>গাড়ি ডিলারশিপ:</strong> বিক্রয় এবং সেবা কেন্দ্র</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent text-2xl mr-3">✓</span>
+                            <span><strong>স্বাধীন কর্মী:</strong> নিজের গ্যারেজ চালু করুন</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent text-2xl mr-3">✓</span>
+                            <span><strong>ট্যাক্সি/বাস সার্ভিস:</strong> ফ্লিট রক্ষণাবেক্ষণ</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent text-2xl mr-3">✓</span>
+                            <span><strong>পরিবহন কোম্পানি:</strong> মেরামত ও রক্ষণাবেক্ষণ</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent text-2xl mr-3">✓</span>
+                            <span><strong>নির্মাতা প্রতিনিধি:</strong> অটোমোবাইল ম্যানুফ্যাকচারিং</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-accent to-orange-600 text-white p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">আমাদের সাহায্য</h3>
+                    <p class="mb-4 leading-relaxed">আমরা আমাদের সকল স্নাতকদের কর্মসংস্থান সহায়তা প্রদান করি।</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <span class="mr-3">→</span>
+                            <span>নিয়োগকর্তাদের সাথে সংযোগ স্থাপন</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3">→</span>
+                            <span>পেশাদার সিভি তৈরিতে সহায়তা</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3">→</span>
+                            <span>সাক্ষাৎকার প্রস্তুতি</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3">→</span>
+                            <span>স্নাতক নেটওয়ার্ক এবং সহায়তা</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Process -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">নথিভুক্তি প্রক্রিয়া</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="bg-primary text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">१</div>
+                    <h3 class="font-bold text-primary mb-2">যোগাযোগ করুন</h3>
+                    <p class="text-gray-600 text-sm">ফোন বা WhatsApp এ আমাদের সাথে যোগাযোগ করুন এবং কোর্স সম্পর্কে জানুন।</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">२</div>
+                    <h3 class="font-bold text-primary mb-2">কোর্স জানুন</h3>
+                    <p class="text-gray-600 text-sm">আমাদের প্রতিষ্ঠান পরিদর্শন করুন এবং কোর্স সম্পর্কে বিস্তারিত জানুন।</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">३</div>
+                    <h3 class="font-bold text-primary mb-2">ভর্তি করুন</h3>
+                    <p class="text-gray-600 text-sm">প্রয়োজনীয় ডকুমেন্ট সংগ্রহ করে ভর্তি প্রক্রিয়া সম্পন্ন করুন।</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">४</div>
+                    <h3 class="font-bold text-primary mb-2">শুরু করুন</h3>
+                    <p class="text-gray-600 text-sm">আপনার প্রশিক্ষণ যাত্রা শুরু করুন এবং দক্ষতা অর্জন করুন।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">ওয়ার্কশপ গ্যালারি</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">ইঞ্জিন কর্মশালা</span>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">ডায়াগনস্টিক্স প্রশিক্ষণ</span>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">ইলেকট্রিক্যাল সিস্টেম</span>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">শিক্ষার্থীদের কাজ</span>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">সরঞ্জাম এবং যন্ত্রপাতি</span>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 text-center">প্রশিক্ষণ গাড়ি</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-primary mb-12 text-center">সাধারণ প্রশ্ন (FAQ)</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                    <summary class="font-bold text-primary text-lg">পূর্ব অভিজ্ঞতা প্রয়োজন কি?</summary>
+                    <p class="text-gray-600 mt-4">না, আমরা শূন্য থেকে শুরু করা শিক্ষার্থীদের স্বাগত জানাই। তবে অটোমোবাইল প্রযুক্তিতে আগ্রহ থাকা প্রয়োজন।</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                    <summary class="font-bold text-primary text-lg">প্র্যাকটিক্যাল প্রশিক্ষণ কতটুকু?</summary>
+                    <p class="text-gray-600 mt-4">কোর্সের ৬০% ব্যবহারিক প্রশিক্ষণ, যেখানে আপনি বাস্তব যানবাহনে কাজ করবেন।</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                    <summary class="font-bold text-primary text-lg">কোর্স শেষে কাজের সুযোগ আছে?</summary>
+                    <p class="text-gray-600 mt-4">হ্যাঁ, আমরা সকল স্নাতককে চাকরির সুযোগ এবং স্থায়নসহ সহায়তা প্রদান করি।</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                    <summary class="font-bold text-primary text-lg">সার্টিফিকেট কি আন্তর্জাতিক স্বীকৃত?</summary>
+                    <p class="text-gray-600 mt-4">আমাদের সার্টিফিকেট আন্তর্জাতিক মান অনুসরণ করে এবং স্থানীয় ও জাতীয় পর্যায়ে স্বীকৃত।</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                    <summary class="font-bold text-primary text-lg">কোর্স খরচ কত?</summary>
+                    <p class="text-gray-600 mt-4">বিভিন্ন প্যাকেজ পাওয়া যায়। বিস্তারিত মূল্য জানতে আমাদের সাথে যোগাযোগ করুন।</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact" class="section bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="text-4xl font-bold mb-6">আজই ভর্তি হন</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">একজন দক্ষ অটোমোবাইল টেকনিশিয়ান হওয়ার যাত্রা শুরু করুন এবং আপনার ক্যারিয়ার গড়ুন।</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="btn btn-primary">যোগাযোগ করুন</button>
+                <button data-whatsapp class="btn bg-green-500 text-white hover:bg-green-600">WhatsApp এ বার্তা দিন</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">NK Automobile Institute</h3>
+                    <p class="text-gray-400">আধুনিক অটোমোবাইল প্রযুক্তি প্রশিক্ষণের শীর্ষস্থানীয় প্রতিষ্ঠান।</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">বিভাগ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/" class="hover:text-white">হোম</a></li>
+                        <li><a href="/driving/" class="hover:text-white">ড্রাইভিং স্কুল</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">তথ্য</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">পাঠ্যক্রম</a></li>
+                        <li><a href="#" class="hover:text-white">কর্মসংস্থান</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">যোগাযোগ</h4>
+                    <p class="text-gray-400">📞 +880 17-XXXX-XXXX</p>
+                    <p class="text-gray-400">💬 WhatsApp এ চ্যাট করুন</p>
+                </div>
+            </div>
+            <hr class="border-gray-700 mb-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2026 NK Automobile Institute. সর্বাধিকার সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="#" data-whatsapp class="whatsapp-btn" title="WhatsApp এ যোগাযোগ করুন">
+        <span>💬</span>
+    </a>
+
+    <script src="../src/script.js"></script>
+</body>
+</html>
