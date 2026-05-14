@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rahmania Car Driving School - দক্ষ ও নিরাপদ ড্রাইভিং প্রশিক্ষণ">
     <title>Rahmania Car Driving School | দক্ষ ও নিরাপদ ড্রাইভিং প্রশিক্ষণ</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
-    </style>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="../dist/style.css">
+
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-primary text-white sticky top-0 z-30 shadow-lg">
+    <nav class="bg-white text-primary sticky top-0 z-30 shadow-md border-b border-gray-100">
         <div class="container flex justify-between items-center py-4">
             <div class="flex items-center space-x-2">
                 <a href="/" class="text-2xl font-bold hover:text-accent">রাহমানিয়া</a>
@@ -29,12 +29,12 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+            <button id="menu-btn" class="md:hidden text-2xl text-primary">☰</button>
         </div>
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="mobile-menu pt-20">
-            <button id="menu-close" class="absolute top-4 right-4 text-3xl">✕</button>
+            <button id="menu-close" class="absolute top-4 right-4 text-3xl text-primary">✕</button>
             <div class="flex flex-col space-y-4 p-6 text-lg">
                 <a href="/" class="hover:text-accent">হোম</a>
                 <a href="/driving/" class="text-accent font-bold">ড্রাইভিং</a>
@@ -47,8 +47,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero bg-gradient-to-br from-blue-600 to-primary">
-        <div class="container w-full">
+    <section class="hero bg-gradient-to-br from-blue-600 to-primary" style="background-image: url('../public/images/hero-driving.svg');">
+        <div class="hero-content container w-full">
             <div class="text-center text-white mb-8">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Rahmania Car Driving School</h1>
                 <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">দক্ষ ও নিরাপদ ড্রাইভিং প্রশিক্ষণ</h2>

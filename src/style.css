@@ -1,17 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Bengali:wght@400;700&display=swap');
-
-/* Global Typography */
 body {
   @apply font-hind text-gray-800;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-poppins font-bold;
+  @apply font-hind font-bold;
 }
 
 /* Smooth transitions */
@@ -19,9 +17,49 @@ a, button {
   @apply transition-all duration-300 ease-in-out;
 }
 
+/* Navigation styling */
+nav {
+  @apply font-semibold;
+}
+
+nav a {
+  @apply text-primary font-medium;
+  @apply transition-all duration-300 ease-in-out;
+}
+
+nav a:hover {
+  @apply text-accent;
+}
+
+nav .text-accent {
+  @apply font-bold;
+  color: #F97316;
+}
+
 /* Hero section styling */
 .hero {
-  @apply min-h-screen flex items-center justify-center;
+  @apply min-h-screen flex items-center justify-center relative bg-cover bg-center bg-no-repeat;
+  position: relative;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+/* Hero background overlay with professional black opacity */
+.hero::before {
+  content: '';
+  @apply absolute inset-0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.65) 100%);
+  z-index: 1;
+}
+
+/* Hero content wrapper */
+.hero-content {
+  @apply relative z-10 w-full;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 /* Card styling */
@@ -31,7 +69,7 @@ a, button {
 
 /* Button styling */
 .btn {
-  @apply px-6 py-3 rounded-lg font-poppins font-semibold transition-all duration-300;
+  @apply px-6 py-3 rounded-lg font-hind font-semibold transition-all duration-300;
 }
 
 .btn-primary {
@@ -53,11 +91,15 @@ a, button {
 
 /* Mobile menu */
 .mobile-menu {
-  @apply hidden fixed top-0 left-0 w-full h-screen bg-primary z-40;
+  @apply hidden fixed top-16 left-0 w-full h-screen bg-white z-40 border-t border-gray-100;
 }
 
 .mobile-menu.active {
   @apply block;
+}
+
+.mobile-menu a {
+  @apply text-primary hover:text-accent hover:bg-gray-50 px-4 py-2 rounded transition;
 }
 
 /* Section styling */
