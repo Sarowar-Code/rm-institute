@@ -48,7 +48,7 @@ nav .text-accent {
 .hero::before {
   content: '';
   @apply absolute inset-0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.534) 0%, rgba(0, 0, 0, 0.65) 100%);
   z-index: 1;
 }
 
@@ -64,7 +64,7 @@ nav .text-accent {
 
 /* Card styling */
 .card {
-  @apply bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105;
+  @apply bg-white bg-opacity-80 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105;
 }
 
 /* Button styling */

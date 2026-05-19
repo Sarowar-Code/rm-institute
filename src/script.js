@@ -24,7 +24,7 @@ mobileMenuLinks.forEach(link => {
 });
 
 // WhatsApp link configuration
-const WHATSAPP_NUMBER = '8801700000000'; // Update with actual number
+const WHATSAPP_NUMBER = '8801851726364'; // Update with actual number
 const WHATSAPP_MESSAGE = 'আমি রাহমানিয়া স্কিলস সেন্টারের সম্পর্কে জানতে চাই।';
 
 const whatsappButtons = document.querySelectorAll('[data-whatsapp]');

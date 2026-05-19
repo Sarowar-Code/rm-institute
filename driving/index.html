@@ -8,14 +8,13 @@
     <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="../dist/style.css">
-
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white text-primary sticky top-0 z-30 shadow-md border-b border-gray-100">
-        <div class="container flex justify-between items-center py-4">
+        <div class="container flex justify-between items-center p-4">
             <div class="flex items-center space-x-2">
-                <a href="/" class="text-2xl font-bold hover:text-accent">রাহমানিয়া</a>
+                <a href="/"><img src="../assets/logos/rm-skills-logo.png" alt="Rahmania Car Driving School" class="w-[170px]"></a>
             </div>
 
             <!-- Desktop Menu -->
@@ -47,7 +46,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero bg-gradient-to-br from-blue-600 to-primary" style="background-image: url('../public/images/hero-driving.svg');">
+    <section class="hero" style="background-image: url('../assets/images/rm-driving.jpeg');">
         <div class="hero-content container w-full">
             <div class="text-center text-white mb-8">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Rahmania Car Driving School</h1>
@@ -56,9 +55,9 @@
             </div>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-col md:flex-row gap-4 justify-center px-4">
-                <button class="btn btn-primary">ভর্তি চলমান</button>
-                <button class="btn btn-outline">বিস্তারিত জানুন</button>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center px-4">
+                <a href="#contact"><button class="btn btn-primary">ভর্তি চলমান</button></a>
+                <a href="#information"><button class="btn btn-outline">বিস্তারিত জানুন</button></a>
                 <button data-whatsapp class="btn bg-green-500 text-white hover:bg-green-600">WhatsApp</button>
             </div>
         </div>
@@ -69,11 +68,11 @@
         <div class="container">
             <h2 class="text-4xl font-bold text-primary mb-12 text-center">Rahmania Car Driving School সম্পর্কে</h2>
             <div class="grid md:grid-cols-2 gap-12">
-                <div>
+                <div class="border border-gray-700 p-8 rounded-2xl">
                     <h3 class="text-2xl font-bold text-primary mb-4">আমাদের বিশেষত্ব</h3>
-                    <p class="text-gray-700 leading-relaxed mb-4">রাহমানিয়া কার ড্রাইভিং স্কুল দেশের অন্যতম বিশ্বস্ত এবং পেশাদার ড্রাইভিং প্রশিক্ষণ প্রতিষ্ঠান।</p>
-                    <p class="text-gray-700 leading-relaxed mb-4">আমরা নতুন এবং অভিজ্ঞ উভয় ড্রাইভারদের জন্য বিস্তৃত প্রশিক্ষণ কর্মসূচি প্রদান করি।</p>
-                    <p class="text-gray-700 leading-relaxed">প্রতিটি শিক্ষার্থী নিরাপদ এবং দক্ষ ড্রাইভিংয়ের জন্য প্রয়োজনীয় সকল দক্ষতা অর্জন করে।</p>
+                    <p class="text-gray-800 leading-relaxed mb-4">রাহমানিয়া কার ড্রাইভিং স্কুল দেশের অন্যতম বিশ্বস্ত এবং পেশাদার ড্রাইভিং প্রশিক্ষণ প্রতিষ্ঠান।</p>
+                    <p class="text-gray-800 leading-relaxed mb-4">আমরা নতুন এবং অভিজ্ঞ উভয় ড্রাইভারদের জন্য বিস্তৃত প্রশিক্ষণ কর্মসূচি প্রদান করি।</p>
+                    <p class="text-gray-800 leading-relaxed">প্রতিটি শিক্ষার্থী নিরাপদ এবং দক্ষ ড্রাইভিংয়ের জন্য প্রয়োজনীয় সকল দক্ষতা অর্জন করে।</p>
                 </div>
                 <div class="bg-blue-50 p-8 rounded-2xl">
                     <h3 class="text-2xl font-bold text-primary mb-6">প্রশিক্ষণের হাইলাইট</h3>
@@ -178,7 +177,7 @@
     </section>
 
     <!-- Course Information -->
-    <section class="section bg-gradient-to-br from-primary to-blue-900 text-white">
+    <section id="information" class="section bg-gradient-to-br from-primary to-blue-900 text-white">
         <div class="container">
             <h2 class="text-4xl font-bold mb-12 text-center">কোর্স তথ্য</h2>
             <div class="grid md:grid-cols-2 gap-12">
@@ -252,28 +251,28 @@
                     <h3 class="text-2xl font-bold text-primary mb-4">প্রস্তুতির ধাপ</h3>
                     <div class="space-y-3">
                         <div class="flex items-start">
-                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">১</span>
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">1</span>
                             <div>
                                 <h4 class="font-bold">প্রাথমিক মূল্যায়ন</h4>
                                 <p class="text-gray-600">আপনার বর্তমান স্তর এবং দক্ষতা মূল্যায়ন</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">২</span>
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">2</span>
                             <div>
                                 <h4 class="font-bold">লক্ষ্যবস্তু প্রশিক্ষণ</h4>
                                 <p class="text-gray-600">দুর্বলতার ক্ষেত্রে বিশেষ প্রশিক্ষণ</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">३</span>
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">3</span>
                             <div>
                                 <h4 class="font-bold">মক পরীক্ষা</h4>
                                 <p class="text-gray-600">প্রকৃত পরীক্ষার অনুরূপ অনুশীলন পরীক্ষা</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">४</span>
+                            <span class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 font-bold flex-shrink-0">4</span>
                             <div>
                                 <h4 class="font-bold">চূড়ান্ত পরীক্ষা</h4>
                                 <p class="text-gray-600">আত্মবিশ্বাসের সাথে পরীক্ষা সম্পন্ন করুন</p>
@@ -291,22 +290,22 @@
             <h2 class="text-4xl font-bold text-primary mb-12 text-center">নথিভুক্তি প্রক্রিয়া</h2>
             <div class="grid md:grid-cols-4 gap-6">
                 <div class="text-center">
-                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">১</div>
+                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">1</div>
                     <h3 class="font-bold text-primary mb-2">যোগাযোগ করুন</h3>
                     <p class="text-gray-600 text-sm">আমাদের সাথে ফোন বা WhatsApp এ যোগাযোগ করুন</p>
                 </div>
                 <div class="text-center">
-                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">२</div>
+                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">2</div>
                     <h3 class="font-bold text-primary mb-2">ভিজিট করুন</h3>
                     <p class="text-gray-600 text-sm">আমাদের প্রতিষ্ঠান দেখতে এবং জানতে আসুন</p>
                 </div>
                 <div class="text-center">
-                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">३</div>
+                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">3</div>
                     <h3 class="font-bold text-primary mb-2">তথ্য জমা দিন</h3>
                     <p class="text-gray-600 text-sm">প্রয়োজনীয় ব্যক্তিগত তথ্য জমা দিন</p>
                 </div>
                 <div class="text-center">
-                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">४</div>
+                    <div class="bg-accent text-white text-4xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">4</div>
                     <h3 class="font-bold text-primary mb-2">শুরু করুন</h3>
                     <p class="text-gray-600 text-sm">আপনার প্রশিক্ষণ যাত্রা শুরু করুন</p>
                 </div>
@@ -320,23 +319,21 @@
             <h2 class="text-4xl font-bold text-primary mb-12 text-center">প্রশিক্ষণ গ্যালারি</h2>
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
-                    <span class="text-gray-400 text-center">ড্রাইভিং প্রশিক্ষণ</span>
+                <img src="../assets/images/rm-driving.jpeg" alt="Driving Training" class="object-cover w-full">
                 </div>
                 <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
-                    <span class="text-gray-400 text-center">হাইওয়ে অনুশীলন</span>
+                    <img src="../assets/images/Rm-driving-1.jpeg" alt="Driving Training" class="object-cover w-full"></div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="../assets/images/nk-normal-2.jpeg" alt="Driving Training" class="object-cover w-full">
                 </div>
                 <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
-                    <span class="text-gray-400 text-center">শিক্ষার্থীরা অনুশীলন</span>
+                        <img src="../assets/images/nk-normal-3.jpeg" alt="Driving Training" class="object-cover w-full">
                 </div>
                 <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
-                    <span class="text-gray-400 text-center">গাড়ি পার্কিং প্রশিক্ষণ</span>
+                        <img src="../assets/images/nk-normal-5.jpeg" alt="Driving Training" class="object-cover w-full">
                 </div>
                 <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
-                    <span class="text-gray-400 text-center">নিরাপত্তা সরঞ্জাম</span>
-                </div>
-                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-gray-200 flex items-center justify-center">
-                    <span class="text-gray-400 text-center">সার্টিফিকেট প্রদান</span>
-                </div>
+                        <img src="../assets/images/nk-normal-4.jpeg" alt="Driving Training" class="object-cover w-full"></div>
             </div>
         </div>
     </section>
@@ -379,17 +376,20 @@
                 <button class="btn btn-primary">যোগাযোগ করুন</button>
                 <button data-whatsapp class="btn bg-green-500 text-white hover:bg-green-600">WhatsApp এ বার্তা দিন</button>
             </div>
+
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white py-12 px-4">
         <div class="container">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Rahmania Car Driving School</h3>
                     <p class="text-gray-400">আপনার বিশ্বস্ত ড্রাইভিং প্রশিক্ষণ অংশীদার।</p>
+
                 </div>
+
                 <div>
                     <h4 class="font-bold mb-4">বিভাগ</h4>
                     <ul class="space-y-2 text-gray-400">
@@ -407,8 +407,10 @@
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">যোগাযোগ</h4>
-                    <p class="text-gray-400">📞 +880 17-XXXX-XXXX</p>
-                    <p class="text-gray-400">💬 WhatsApp এ চ্যাট করুন</p>
+                    <p class="text-gray-400">📞 +8801851726364</p>
+                    <p class="text-gray-400">📞 +8801580306096</p>
+                    <p class="text-gray-400">📍 মেডিকেল গেইট, হাটহাজারী পৌরসভা,চট্টগ্রাম</p>
+
                 </div>
             </div>
             <hr class="border-gray-700 mb-8">
